@@ -1,0 +1,72 @@
+\documentclass[a4paper,12pt]{letter}
+\usepackage[utf8]{inputenc} % UTF-8 encoding
+\usepackage[margin=1in]{geometry} % Adjust margins
+\usepackage{graphicx} % For including images
+\usepackage{calligra} % For calligraphy text
+\usepackage[colorlinks=false]{hyperref} % Remove URL styling
+\usepackage[absolute,overlay]{textpos}
+
+% Adjust vertical position of the address
+\makeatletter
+\setlength{\topmargin}{-4cm} % Move the address higher on the page
+\makeatother
+
+\frenchspacing
+
+\date{} % Set empty date to suppress it
+
+% Sender information
+\address{Phone: +1 (510) 922-9939\\ E-mail: info@oahg.net\\ Date: December 1, 2024}
+
+\begin{document}
+
+
+\begin{letter}{%
+{{name}} \\
+2817 High St, Unit {{ unit }} \\
+Oakland, CA, 94619
+}
+
+
+
+\opening{Dear {{name}},}
+
+\textbf{RE: Notice of Allowable Rent Increase}
+
+Please be advised that pursuant to the Oakland Municipal Code, Chapter 8.2 entitled Rent Adjustment Ordinance, an owner may increase the rent annually. Such rent increase cannot take effect earlier than your anniversary date.
+
+The City of Oakland has published the annual CPI rent increase for August 1, 2024, through July 31, 2025, as 2.3\%. You can verify the permissible annual CPI increase on the City of Oakland website at the address below:
+
+https://www.oaklandca.gov/resources/learn-more-about-allowable-rent-increases
+
+{{#if applyBanked}}
+A banked rent increase of {{percentage}}\% has been applied. {{#if maxBanked}}You may have more banked rent increases the owner has not imposed at this time.{{else}}You do not have any banked rent increases remaining.{{/if}}
+{{/if}}
+
+Effective January 1, 2025, your rent will be increased by \textbf{\${{amount}} }from \${{oldRent}} to \textbf{\${{newRent}} }per month.
+
+Except as herein provided, all other terms of your tenancy shall remain in force and effect.
+
+\vspace{0.8cm}
+
+% Signature block with logo below the signature
+Sincerely Yours, \\
+Oakland Affordable Housing Group, LP\\
+Managing Agent\\
+
+\vspace{0.03cm}
+
+% Signature
+\noindent
+{\Huge\calligra Carlo Revelli} % Calligraphic font
+
+\vspace{1cm}
+
+\begin{textblock*}{\textwidth}(3cm,21.7cm) % Adjust position as needed
+    \centering
+    \includegraphics[width=0.65\textwidth]{high-st} % Adjusted size to 50% larger
+\end{textblock*}
+
+\end{letter}
+
+\end{document}

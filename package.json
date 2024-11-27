@@ -1,0 +1,14 @@
+{
+  "name": "rent-increases",
+  "version": "1.0.0",
+  "dependencies": {
+    "bignumber.js": "^9.1.2",
+    "handlebars": "^4.7.8"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
