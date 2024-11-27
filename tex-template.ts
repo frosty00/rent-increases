@@ -106,7 +106,7 @@ function main () {
             fs.unlinkSync (`./output/${tenant.unit}.aux`)
         }) } )
     }
-    console.log (totalAmount.multipliedBy ('12').toString ())
+    console.log ('Increased the yearly income by ' + totalAmount.multipliedBy ('12').toString ())
 }
 
 main ()
