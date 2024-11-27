@@ -22,7 +22,7 @@ brew install mactex
 
 # Usage
 
-First export data from rent manager into a file called `tenant-data.csv` and so that it has 4 columns. Name, lease start, base rent, current rent.
+First export data from rent manager into a file called `tenant-data.csv` and so that it has 5 columns. Name, unit, lease start, base rent, current rent.
 
 Next run the following command
 
